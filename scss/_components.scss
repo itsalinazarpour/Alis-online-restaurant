@@ -1,0 +1,400 @@
+.hamburger-menu {
+    width: 55px;
+    height: 55px;
+    z-index: 1;
+    position: fixed;
+    top: 4%;
+    left: 2%;
+    @media (max-width: 1700px) {
+        width: 50px;
+        height: 50px;
+    }
+    @media (max-width: 1500px) {
+        width: 45px;
+        height: 45px;
+    }
+    @media (max-width: 1300px) {
+        width: 30px;
+        height: 30px;
+    }
+    @media (max-width: 750px) {
+        left: 3%;
+    }
+    .menu {
+        @extend %fullspace;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        cursor: pointer;
+        transition: transform 0.5s cubic-bezier(1, 0, 0, 1);
+        &:hover .menu-line {
+            background-color: lighten($color: $color-primary, $amount: 20);
+        }
+        &-line {
+            width: 100%;
+            height: 8px;
+            background-color: $color-primary;
+            transition: all 0.5s;
+            box-shadow: 0 0 5px rgba($color-black, 0.8);
+            transform-origin: left;
+            @media (max-width: 1500px) {
+                height: 7px;
+            }
+            @media (max-width: 1300px) {
+                height: 6px;
+            }
+        }
+    }
+}
+
+.logo {
+    @include flexlayout;
+    font-size: 65px;
+    color: $color-primary;
+    width: 100px;
+    height: 100px;
+    border: 5px solid $color-primary;
+    border-radius: 50%;
+    text-decoration: none;
+    margin-right: 30px;
+    background-color: rgba($color-black, 0.4);
+
+    transition: all 0.3s;
+    @media (max-width: 1700px) {
+        width: 85px;
+        height: 85px;
+        font-size: 55px;
+    }
+    @media (max-width: 1500px) {
+        width: 70px;
+        height: 70px;
+        font-size: 45px;
+    }
+    @media (max-width: 1300px) {
+        width: 60px;
+        height: 60px;
+        font-size: 40px;
+        border-width: 4px;
+    }
+    @media (max-width: 1050px) {
+        width: 57px;
+        height: 57px;
+        font-size: 37px;
+        margin-right: 20px;
+    }
+    @media (max-width: 900px) {
+        width: 52px;
+        height: 52px;
+        font-size: 34px;
+        border: none;
+    }
+    @media (max-width: 700px) {
+        display: none;
+    }
+
+    &:hover {
+        background-color: rgba($color-black, 0.7);
+        color: lighten($color: $color-primary, $amount: 10);
+        border-color: lighten($color: $color-primary, $amount: 10);
+    }
+}
+
+.main-name {
+    font-family: $font-fantacy;
+    font-size: 64px;
+    color: $color-secondary;
+    cursor: context-menu;
+    @include textstyles;
+
+    @media (max-width: 1700px) {
+        font-size: 55px;
+    }
+    @media (max-width: 1500px) {
+        font-size: 45px;
+    }
+    @media (max-width: 1300px) {
+        font-size: 37px;
+    }
+    @media (max-width: 1050px) {
+        font-size: 30px;
+    }
+    @media (max-width: 900px) {
+        font-size: 24px;
+    }
+    @media (max-width: 586px) {
+        text-align: center;
+    }
+}
+
+.sub-name {
+    font-family: $font-josefin;
+    cursor: context-menu;
+
+    font-size: 38px;
+    color: $color-secondary;
+    text-align: end;
+
+    @include textstyles;
+    text-transform: lowercase;
+    @media (max-width: 1500px) {
+        font-size: 25px;
+    }
+    @media (max-width: 1300px) {
+        font-size: 22px;
+    }
+    @media (max-width: 1050px) {
+        font-size: 20px;
+    }
+    @media (max-width: 900px) {
+        font-size: 19px;
+    }
+
+    @media (max-width: 586px) {
+        text-align: center;
+    }
+}
+
+.main-heading {
+    font-family: $font-josefin;
+    font-size: 250px;
+    font-weight: 900;
+    color: $color-jadid;
+    margin-bottom: 0px;
+    text-shadow: 0 0 10px $color-black;
+    cursor: context-menu;
+
+    @media (max-width: 1700px) {
+        font-size: 200px;
+    }
+    @media (max-width: 1500px) {
+        font-size: 170px;
+    }
+    @media (max-width: 1300px) {
+        font-size: 150px;
+    }
+    @media (max-width: 1050px) {
+        font-size: 125px;
+    }
+    @media (max-width: 900px) {
+        font-size: 100px;
+    }
+    @media (max-width: 750px) {
+        font-size: 90px;
+    }
+    @media (max-width: 470px) {
+        font-size: 75px;
+    }
+    @media (max-width: 370px) {
+        font-size: 65px;
+    }
+}
+
+.sub-heading {
+    font-family: $font-josefin;
+    cursor: context-menu;
+text-shadow: 2px 2px 5px $color-black;
+    font-size: 98px;
+    font-weight: 400;
+    color: $color-primary;
+    margin-bottom: 40px;
+    @media (max-width: 1700px) {
+        font-size: 75px;
+    }
+    @media (max-width: 1500px) {
+        font-size: 55px;
+    }
+    @media (max-width: 1300px) {
+        font-size: 50px;
+    }
+    @media (max-width: 1050px) {
+        font-size: 45px;
+    }
+    @media (max-width: 900px) {
+        font-size: 38px;
+        margin-bottom: 20px;
+    }
+    @media (max-width: 750px) {
+        font-size: 32px;
+    }
+    @media (max-width: 400px) {
+        font-size: 22px;
+    }
+}
+
+.main-btn {
+    position: relative;
+    top: 50px;
+    padding: 20px 28px;
+    font-family: $font-fantacy;
+    font-size: 65px;
+    box-shadow: 0 0 20px rgba($color-secondary, 0.1);
+
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    background-color: rgba($color-black, 0.4);
+    color: $color-secondary;
+    border: none;
+    @include transition(all 0.4s);
+    @media (max-width: 1700px) {
+        padding: 15px 23px;
+        font-size: 45px;
+    }
+    @media (max-width: 1500px) {
+        padding: 12px 16px;
+        font-size: 35px;
+    }
+    @media (max-width: 1300px) {
+        padding: 10px 13px;
+        font-size: 32px;
+    }
+    @media (max-width: 1050px) {
+        padding: 9px 11px;
+        font-size: 30px;
+    }
+    @media (max-width: 900px) {
+        padding: 8px 9px;
+        font-size: 28px;
+    }
+    @media (max-width: 750px) {
+        padding: 7px 9px;
+        font-size: 23px;
+    }
+
+    &:hover {
+        background-color: rgba($color-dark, 0.8);
+        color: $color-primary;
+    }
+}
+
+.card {
+    width: 27vw;
+    height: 27vw;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    @media (max-width: 1050px) {
+        width: 29vw;
+        height: 29vw;
+    }
+    @media (max-width: 600px) {
+        width: 31vw;
+        height: 31vw;
+    }
+
+    &:hover .card-overlay {
+        left: 0;
+        @include transition(all 0.6s);
+    }
+
+    &-overlay {
+        position: absolute;
+        left: -100%;
+        top: 0;
+        @extend %fullspace;
+        @include flexlayout;
+        flex-direction: column;
+        background-color: rgba($color-black, 0.3);
+        color: $color-white;
+
+        @media (max-width: 768px) {
+            left: 0;
+            background-color: rgba($color-black, 0);
+        }
+
+        &-heading {
+            @include textstyles;
+            font-size: 40px;
+            font-family: $font-fantacy;
+            background-color: rgba($color-black, 0.4);
+            @media (max-width: 1500px) {
+                background-color: rgba($color-black, 0.8);
+
+                font-size: 25px;
+            }
+            @media (max-width: 1300px) {
+                font-size: 22px;
+            }
+            @media (max-width: 1050px) {
+                font-size: 20px;
+            }
+            @media (max-width: 900px) {
+                margin-bottom: 20px;
+            }
+            @media (max-width: 400px) {
+                display: none;
+            }
+        }
+        &-paragraph {
+            @include textstyles;
+            font-size: 30px;
+            font-family: $font-courier-new;
+            margin-top: 10px;
+            margin-bottom: 35px;
+            font-weight: bolder;
+            background-color: rgba($color-black, 0.6);
+            @media (max-width: 1500px) {
+                font-size: 25px;
+                margin-top: 5px;
+                margin-bottom: 20px;
+            }
+            @media (max-width: 1300px) {
+                font-size: 22px;
+                margin-top: 5px;
+                margin-bottom: 16px;
+                background-color: rgba($color-black, 0.8);
+            }
+            @media (max-width: 1050px) {
+                font-size: 19px;
+                margin-top: 5px;
+                margin-bottom: 20px;
+            }
+            @media (max-width: 900px) {
+                display: none;
+            }
+        }
+        &-btn {
+            padding: 10px 15px;
+            font-size: large;
+            font-weight: bolder;
+            font-family: $font-josefin;
+            text-transform: uppercase;
+            background-color: $color-secondary;
+
+            border-radius: 5px;
+            cursor: pointer;
+            @media (max-width: 1500px) {
+                padding: 5px 10px;
+            }
+            @media (max-width: 1300px) {
+                padding: 5px 10px;
+                font-size: medium;
+            }
+            @media (max-width: 1050px) {
+                padding: 5px 10px;
+            }
+            @media (max-width: 900px) {
+                padding: 5px 10px;
+                font-size: small;
+            }
+            @media (max-width: 750px) {
+                padding: 4px 6px;
+            }
+            @media (max-width: 400px) {
+                font-size: 10px;
+                position: absolute;
+                bottom: 0;
+            }
+
+            &:hover {
+                background-color: lighten($color: $color-secondary, $amount: 100%);
+            }
+        }
+    }
+    &-img {
+        @extend %fullspace;
+
+        object-fit:cover;
+    }
+}
