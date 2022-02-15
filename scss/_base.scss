@@ -78,6 +78,9 @@ body {
 @mixin transition($params...){
     transition:$params;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 
 
