@@ -33,6 +33,10 @@ body {
   height: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .navbar {
   position: relative;
   z-index: 6;
