@@ -268,7 +268,7 @@ text-shadow: 2px 2px 5px $color-black;
     }
 }
 
-.card {
+.cardim {
     width: 27vw;
     height: 27vw;
     position: relative;
@@ -283,7 +283,7 @@ text-shadow: 2px 2px 5px $color-black;
         height: 31vw;
     }
 
-    &:hover .card-overlay {
+    &:hover .cardim-overlay {
         left: 0;
         @include transition(all 0.6s);
     }
