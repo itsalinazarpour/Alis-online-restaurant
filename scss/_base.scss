@@ -1,6 +1,5 @@
-
-$m:"margin";
-$p:"padding";
+$m: "margin";
+$p: "padding";
 $color-dark: #262626;
 $color-darker: #1f1d1d;
 $color-black: #000;
@@ -12,10 +11,6 @@ $color-jadid: #be8268;
 $color-white: #bbb;
 $color-red: #ff0000;
 $color-abie: #47485b;
-
-
-   
-
 
 $font-dancingscript: "dancing script", cursive;
 $font-josefin: "josefin sans", sans-serif;
@@ -45,7 +40,10 @@ body {
         }
     }
 }
-
+h,
+p {
+    margin-bottom: 0;
+}
 * {
     #{$m}: 0px;
     #{$p}: 0px;
@@ -76,13 +74,40 @@ body {
     height: 100%;
 }
 
-@mixin transition($params...){
-    transition:$params;
+@mixin transition($params...) {
+    transition: $params;
 }
-html{
+html {
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: transparent;
 
+    background-color: $color-darker;
+}
+::-webkit-scrollbar-thumb {
+    background-color: $color-primary;
+    border-radius: 10px;
+}
+.description::-webkit-scrollbar {
+    width: 7px;
+    height: 10px;
+}
+.description::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+.description::-webkit-scrollbar-thumb {
+    background-color: #262626a8;
+    border-radius: 15px;
+}
+
+h1 {
+    font-weight: 900;
+}
 
 

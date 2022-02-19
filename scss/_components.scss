@@ -5,6 +5,14 @@
     position: fixed;
     top: 4%;
     left: 2%;
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    
     @media (max-width: 1700px) {
         width: 50px;
         height: 50px;
@@ -192,7 +200,7 @@
 .sub-heading {
     font-family: $font-josefin;
     cursor: context-menu;
-text-shadow: 2px 2px 5px $color-black;
+    text-shadow: 2px 2px 5px $color-black;
     font-size: 98px;
     font-weight: 400;
     color: $color-primary;
@@ -268,7 +276,7 @@ text-shadow: 2px 2px 5px $color-black;
     }
 }
 
-.card {
+.cardim {
     width: 27vw;
     height: 27vw;
     position: relative;
@@ -283,7 +291,7 @@ text-shadow: 2px 2px 5px $color-black;
         height: 31vw;
     }
 
-    &:hover .card-overlay {
+    &:hover .cardim-overlay {
         left: 0;
         @include transition(all 0.6s);
     }
@@ -395,6 +403,6 @@ text-shadow: 2px 2px 5px $color-black;
     &-img {
         @extend %fullspace;
 
-        object-fit:cover;
+        object-fit: cover;
     }
 }
