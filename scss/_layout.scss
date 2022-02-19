@@ -1,122 +1,71 @@
-.navbara {
-    position: relative;
-    z-index: 6;
-    &-navigation {
-        &-left {
-            width: 500px;
-            height: 100%;
-            background: linear-gradient(to bottom, rgba($color-black, 1), rgba($color-primary, 0.75));
-            position: fixed;
-            left: -500px;
-            @include flexlayout;
-            transition: left 0.5s cubic-bezier(1, 0, 0, 1);
+.navbara-navigation-left {
+    width: 500px;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba($color-black, 1), rgba($color-primary, 0.75));
+
+    @include flexlayout;
+
+    @media (max-width: 1050px) {
+        width: 350px;
+    }
+    @media (max-width: 681px) {
+
+        width: 70%;
+    }
+    .nav-list {
+        padding-left: 0;
+        &-item {
+            list-style: none;
+        }
+        &-link {
+            @include textstyles;
+            text-decoration: none;
+
+            font: {
+                family: $font-sans-serif;
+                size: 40px;
+                weight: bolder;
+            }
+            display: block;
+            margin: 25px 0;
+            color: $color-secondary;
+            text-align: center;
+            
             @media (max-width: 1050px) {
-                width: 350px;
+                margin: 15px 0;
+                font-size: 25px;
             }
-            @media (max-width: 681px) {
-                left: -70%;
-                width: 70%;
+            @media (max-width: 960px) {
+                margin: 25px 0;
+                font-size: 25px;
             }
-            .nav-list {
-                padding-left:0;
-                &-item {
-                    list-style: none;
-                }
-                &-link {
-                    @include textstyles;
-                    text-decoration: none;
+            @media (max-width: 660px) {
+                margin: 20px 0;
+                font-size: 25px;
+            }
+            @media (max-width: 481px) {
+                margin: 35px 0;
+                font-size: 25px;
+            }
+            @media (max-width: 361px) {
+                margin: 30px 0;
+                font-size: 20px;
+            }
+            @media (max-height : 420px){
+                margin: 5px 0;
+            
+            }
 
-                    font: {
-                        family: $font-sans-serif;
-                        size: 40px;
-                        weight: bolder;
-                    }
-                    display: block;
-                    margin: 25px 0;
-                    color: $color-secondary;
-                    text-align: center;
-                    @media (max-width: 1050px) {
-                        margin: 15px 0;
-                        font-size: 25px;
-                    }
-                    @media (max-width: 960px) {
-                        margin: 25px 0;
-                        font-size: 25px;
-                    }
-                    @media (max-width: 660px) {
-                        margin: 20px 0;
-                        font-size: 25px;
-                    }
-                    @media (max-width: 481px) {
-                        margin: 35px 0;
-                        font-size: 25px;
-                    }
-                    @media (max-width: 361px) {
-                        margin: 30px 0;
-                        font-size: 20px;
-                    }
-
-                    &:hover {
-                        color: $color-abie;
-                        letter-spacing: 3px;
-                        transition: all 0.1s;
-                    }
-                }
+            &:hover {
+                color: $color-abie;
+                letter-spacing: 3px;
+                transition: all 0.1s;
             }
         }
-        // &-right {
-        //     width: 50vw;
-        //     height: 100vh;
-        //     background-color: $color-dark;
-        //     position: fixed;
-        //     right: -50vw;
-
-        //     .right-img {
-        //         width: 50%;
-        //         position: absolute;
-        //         border-radius: 3px;
-        //         box-shadow: 2px 2px 6px rgba($color-black, 0.4);
-        //     }
-        //     .right-img-1 {
-        //         left: 15%;
-        //         top: 15%;
-        //     }
-        //     .right-img-2 {
-        //         left: 25%;
-        //         top: 35%;
-        //     }
-        //     .right-img-3 {
-        //         left: 35%;
-        //         top: 55%;
-        //     }
-        // }
     }
 }
 
-.checkbox:checked ~ .navbara-navigation .navbara-navigation-left {
-    left: 0;
-}
-.checkbox:checked ~ .hamburger-menu .menu {
-    transform: rotateZ(90deg);
 
-    &:hover .menu-line {
-        background-color: lighten($color: $color-red, $amount: 18);
-    }
-}
-.checkbox:checked ~ .hamburger-menu .menu-line-1 {
-    transform: rotateZ(42deg);
-    background-color: red;
-    box-shadow: none;
-}
-.checkbox:checked ~ .hamburger-menu .menu-line-2 {
-    opacity: 0;
-
-}
-.checkbox:checked ~ .hamburger-menu .menu-line-3 {
-    transform: rotateZ(-42deg);
-    background-color: red;
-    box-shadow: none;
-}
 
 .header {
     width: 100%;
@@ -219,7 +168,7 @@
         .description {
             font-size: 25px;
             height: 85%;
-            overflow-y:auto;
+            overflow-y: auto;
             background-color: rgba($color-white, 1);
             padding: 20px;
             border-radius: 5px;
@@ -239,7 +188,7 @@
                 }
             }
         }
-        
+
         .main-heading {
             color: $color-black;
             text-transform: uppercase;
@@ -292,6 +241,7 @@
         color: #f3e6c4;
         padding-bottom: 35px;
         text-decoration: underline;
+        
 
         @media (max-width: 1500px) {
             font-size: 105px;
@@ -336,11 +286,11 @@
     background: linear-gradient(rgba($color-black, 0.3), rgba($color-black, 0.8)) center;
 
     width: 100%;
-    
+
     &-header {
         @include flexlayout;
         margin-bottom: 20px;
-        
+
         h1 {
             text-shadow: 0 0 30px rgba($color-black, 0.6);
         }
@@ -351,11 +301,9 @@
         width: 200px;
         justify-content: space-around;
         margin-bottom: 20px;
-        
+
         @media (max-width: 350px) {
             width: 150px;
-
-
         }
         &-item {
             list-style: none;
@@ -367,9 +315,8 @@
             transition: all 0.3s;
             &:hover {
                 color: $color-abie;
-
             }
-            
+
             @media (max-width: 425px) {
                 font-size: 30px;
             }
