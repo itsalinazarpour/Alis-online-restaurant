@@ -1,25 +1,25 @@
 .hamburger-menu {
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
     z-index: 1;
     position: fixed;
     top: 4%;
     left: 2%;
     background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
-    
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+
     @media (max-width: 1700px) {
-        width: 50px;
-        height: 50px;
-    }
-    @media (max-width: 1500px) {
         width: 45px;
         height: 45px;
+    }
+    @media (max-width: 1500px) {
+        width: 40px;
+        height: 40px;
     }
     @media (max-width: 1300px) {
         width: 30px;
@@ -56,54 +56,21 @@
 }
 
 .logo {
-    @include flexlayout;
-    font-size: 65px;
-    color: $color-primary;
-    width: 100px;
-    height: 100px;
-    border: 5px solid $color-primary;
-    border-radius: 50%;
-    text-decoration: none;
-    margin-right: 30px;
-    background-color: rgba($color-black, 0.4);
-
-    transition: all 0.3s;
-    @media (max-width: 1700px) {
-        width: 85px;
-        height: 85px;
-        font-size: 55px;
-    }
-    @media (max-width: 1500px) {
-        width: 70px;
-        height: 70px;
-        font-size: 45px;
-    }
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    opacity: 0.6;
     @media (max-width: 1300px) {
-        width: 60px;
-        height: 60px;
-        font-size: 40px;
-        border-width: 4px;
-    }
-    @media (max-width: 1050px) {
-        width: 57px;
-        height: 57px;
-        font-size: 37px;
-        margin-right: 20px;
-    }
-    @media (max-width: 900px) {
-        width: 52px;
-        height: 52px;
-        font-size: 34px;
-        border: none;
+        width: 40px;
+        height: 40px;
     }
     @media (max-width: 700px) {
         display: none;
     }
+    
 
     &:hover {
-        background-color: rgba($color-black, 0.7);
-        color: lighten($color: $color-primary, $amount: 10);
-        border-color: lighten($color: $color-primary, $amount: 10);
+        opacity: .8;
     }
 }
 
