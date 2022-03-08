@@ -40,16 +40,21 @@
 
 <body>
 
-    
 
 
+    <div style="position: fixed; bottom: 40px; right: 25px;z-index: 99999">
+		<a href="whatsapp://send?phone=989396147299" target="_blank">
+		    <img src="whatsapp.gif" style=" width: 45px;">
+		</a>
+	</div>
 
-   
-    <div class="navbara-navigation-left offcanvas offcanvas-start"  data-bs-scroll="true" tabindex="-1" id="offcanvas">
+
+    <div class="navbara-navigation-left offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvas">
         <div class="offcanvas-header justify-content-end w-100">
 
-            <button type="button" class="btn-close btn-close-white " data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
+            <button type="button" class="btn-close btn-close-white " data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
         <ul class="nav-list">
             <li class="nav-list-item"><a href="#" class="nav-list-link"><i class="fa fa-home"></i> home</a></li>
             <li class="nav-list-item"><a href="#" class="nav-list-link"><i class="fa fa-tablet-alt"></i>
@@ -66,74 +71,43 @@
     </div>
 
 
-        <button class="hamburger-menu"  data-bs-toggle="offcanvas" data-bs-target="#offcanvas">
-            <label for="check" class="menu">
-                <div class="menu-line menu-line-1"></div>
-                <div class="menu-line menu-line-2"></div>
-                <div class="menu-line menu-line-3"></div>
-            </label>
-        </button>
-    
+    <button class="hamburger-menu" data-bs-toggle="offcanvas" data-bs-target="#offcanvas">
+        <label for="check" class="menu">
+            <div class="menu-line menu-line-1"></div>
+            <div class="menu-line menu-line-2"></div>
+            <div class="menu-line menu-line-3"></div>
+        </label>
+    </button>
 
-    <!-- end navbara section -->
+
+    <!-- end navbara section --> 
 
     <!-- start site header -->
     <header class="header">
-        <div class="brand">
-            
-            <div>
-                <div style="display: flex; align-items: center;">
-                    <a href="#"><img src="FoodAndDrinkIconBurger.svg" class="logo"  alt="svg logo"></a>
-                    <h1 class="main-name">ali's online restaurant</h1>
+        <div class="container sub-header d-flex flex-column justify-content-around h-100">
+            <div class="h-50 d-flex flex-column justify-content-around">
+                <div class="brand">
+                    <div class="">
+                        <div style="display: flex; align-items: center;">
+                            <a href="#"><img src="FoodAndDrinkIconBurger.svg" class="logo" alt="svg logo"></a>
+                            <h1 class="main-name">ali's online restaurant</h1>
+                        </div>
+                        <p class="sub-name">#ysmnizm</p>
+                    </div>
                 </div>
-                <p class="sub-name">#ysmnizm</p>
+                <div class="header-banner">
+                    <h1 class="main-heading">Hope you enjoy<br>what we've made for you :)</h1>
+                </div>
             </div>
+            <a href="#gallery" style="width: fit-content;
+            align-self: center;"><button class="main-btn"> reservation </button></a>
+        </div>
 
-        </div>
-        <div class="header-banner">
-            <h1 class="main-heading">welcome</h1>
-            <h3 class="sub-heading">try our delicious foods</h3>
-            <button class="main-btn"> reservation </button>
-        </div>
     </header>
     <!-- end site header -->
 
-    <!-- start about us section -->
-    <section class="about-us">
-        <div class="about-us-left">
-            <h1 class="main-heading">about us</h1>
-
-
-            <p class="description">
-                <i class="fa fa-check"></i>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laborum saepe autem odit.
-                Voluptatum, laborum reru Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo accusamus
-                quaerat amet quia omnis.
-                <br><br>
-                <i class="fa fa-check"></i>
-                nihil nesciunt hic praesentium in. Modi
-                deserunt repudiandae obcaecati enim eaque odit
-                . <br><br>
-                <i class="fa fa-check"></i>
-                Sequi sint nesciunt
-                officia. m temporibus amet nisi cum? Sapiente ad voluptas nihil quaerat adipisci? Aliquam
-                aut fugit obcaecati in!
-                <br><br><br>
-                <a href="#">more information...</a>
-            </p>
-
-
-        </div>
-
-
-
-    </section>
-    <!-- end about us section -->
-
-
-    <!-- start gallery section -->
-    <section class="gallery">
+<!-- start gallery section -->
+    <section class="gallery" id="gallery">
 
         <h1 class="gallery-header-name"> Menu</h1>
 
@@ -193,10 +167,47 @@
     <!-- end gallery section -->
 
 
+    <!-- start about us section -->
+    <section class="about-us">
+        <div class="about-us-left">
+            <h1 class="main-heading">about us</h1>
+
+
+            <p class="description">
+                <i class="fa fa-check"></i>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laborum saepe autem odit.
+                Voluptatum, laborum reru Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo accusamus
+                quaerat amet quia omnis.
+                <br><br>
+                <i class="fa fa-check"></i>
+                nihil nesciunt hic praesentium in. Modi
+                deserunt repudiandae obcaecati enim eaque odit
+                . <br><br>
+                <i class="fa fa-check"></i>
+                Sequi sint nesciunt
+                officia. m temporibus amet nisi cum? Sapiente ad voluptas nihil quaerat adipisci? Aliquam
+                aut fugit obcaecati in!
+                <br><br><br>
+                <a href="#">more information...</a>
+            </p>
+
+
+        </div>
+
+
+
+    </section>
+    <!-- end about us section -->
+
+
+    
+
+
     <!-- start footer section -->
     <footer class="footer">
         <div class="footer-header">
-        
+
             <div>
                 <h1 class="main-name">you wish , we do</h1>
                 <p class="sub-name">#ysmnizm</p>
@@ -219,7 +230,7 @@
 
         <div class="footer-copyright">
             <p class="footer-copyright-paragraph">
-                &copy; All Rights Reserved. <br>powered by ALI NAZARPOUR.
+                &copy; All Rights Reserved. <br>Designed by Ali Nazarpour.
             </p>
         </div>
     </footer>

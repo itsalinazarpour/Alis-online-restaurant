@@ -73,31 +73,27 @@
     background: linear-gradient(rgba($color-black, 0.8), rgba($color-black, 0.6), rgba($color-black, 0.2)) center
         no-repeat;
     background-size: cover;
-    position: relative;
-    @media (max-width: 850px) {
-        background: linear-gradient(rgba($color-black, 0.8), rgba($color-black, 0.6)) center no-repeat;
-    }
+
+    
     .brand {
-        @include centering(15%);
+
         @include flexlayout;
 
-        @media (max-width: 750px) {
-            @include centering(12%);
-        }
+        
     }
     &-banner {
-        @include centering(55%);
+        
         text-align: center;
-        @media (max-width: 750px) {
-            @include centering(50%);
-        }
+        
     }
 }
 
 .about-us {
-    height: 90vh;
+
     padding: 60px;
-    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+
     background: url(../images/YzMISZLrKJS6y8KsAP6w.jpg) right no-repeat;
     background-size: cover;
     opacity: 0.95;
@@ -109,25 +105,23 @@
     }
     @media (max-width: 1300px) {
         padding: 25px;
-        height: 80vh;
+
     }
     @media (max-width: 1050px) {
         padding: 22px;
-        height: 70vh;
+
     }
     @media (max-width: 900px) {
         padding: 19px;
-        height: 65vh;
+
     }
     @media (max-width: 850px) {
         background-image: none;
         padding: 0px;
         @include flexlayout;
-        margin: 100px 0;
+
     }
-    @media (max-width: 340px) {
-        height: 80vh;
-    }
+    
 
     &-left {
         width: 1000px;
@@ -171,7 +165,7 @@
             overflow-y: auto;
             background-color: rgba($color-white, 1);
             padding: 20px;
-            border-radius: 5px;
+            border-radius: 2px;
             @media (max-width: 1300px) {
                 font-size: 20px;
             }
@@ -232,7 +226,7 @@
 
 .gallery {
     &-header-name {
-        background: linear-gradient(rgba($color-primary, 0.8), rgba($color-black, 0.6));
+        background: linear-gradient(rgba($color-black, 0.8), rgba($color-black, 0.6));
         height: 150px;
         @include flexlayout;
         font-family: $font-courier-new;

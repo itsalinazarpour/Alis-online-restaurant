@@ -14,6 +14,7 @@ body {
   }
   body .about-us {
     order: 2;
+    margin-bottom: 0;
   }
   body .footer {
     order: 3;
@@ -55,7 +56,7 @@ html {
 
 ::-webkit-scrollbar-thumb {
   background-color: #844d36;
-  border-radius: 10px;
+  border-radius: 0;
 }
 
 .description::-webkit-scrollbar {
@@ -69,7 +70,7 @@ html {
 
 .description::-webkit-scrollbar-thumb {
   background-color: #262626a8;
-  border-radius: 15px;
+  border-radius: 2px;
 }
 
 h1 {
@@ -171,55 +172,22 @@ h1 {
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)) center no-repeat;
   background-size: cover;
-  position: relative;
-}
-
-@media (max-width: 850px) {
-  .header {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)) center no-repeat;
-  }
 }
 
 .header .brand {
-  position: absolute;
-  top: 15%;
-  transform: translate(-50%, -50%);
-  left: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-@media (max-width: 750px) {
-  .header .brand {
-    position: absolute;
-    top: 12%;
-    transform: translate(-50%, -50%);
-    left: 50%;
-  }
-}
-
 .header-banner {
-  position: absolute;
-  top: 55%;
-  transform: translate(-50%, -50%);
-  left: 50%;
   text-align: center;
 }
 
-@media (max-width: 750px) {
-  .header-banner {
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    left: 50%;
-  }
-}
-
 .about-us {
-  height: 90vh;
   padding: 60px;
-  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
   background: url(../images/YzMISZLrKJS6y8KsAP6w.jpg) right no-repeat;
   background-size: cover;
   opacity: 0.95;
@@ -240,21 +208,18 @@ h1 {
 @media (max-width: 1300px) {
   .about-us {
     padding: 25px;
-    height: 80vh;
   }
 }
 
 @media (max-width: 1050px) {
   .about-us {
     padding: 22px;
-    height: 70vh;
   }
 }
 
 @media (max-width: 900px) {
   .about-us {
     padding: 19px;
-    height: 65vh;
   }
 }
 
@@ -265,13 +230,6 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 100px 0;
-  }
-}
-
-@media (max-width: 340px) {
-  .about-us {
-    height: 80vh;
   }
 }
 
@@ -337,7 +295,7 @@ h1 {
   overflow-y: auto;
   background-color: #bbbbbb;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 @media (max-width: 1300px) {
@@ -428,7 +386,7 @@ h1 {
 }
 
 .gallery-header-name {
-  background: linear-gradient(rgba(132, 77, 54, 0.8), rgba(0, 0, 0, 0.6));
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
   height: 150px;
   display: flex;
   justify-content: center;
@@ -748,15 +706,15 @@ h1 {
   }
 }
 
-@media (max-width: 586px) {
+@media (max-width: 700px) {
   .sub-name {
-    text-align: center;
+    display: none;
   }
 }
 
 .main-heading {
   font-family: "josefin sans", sans-serif;
-  font-size: 250px;
+  font-size: 68px;
   font-weight: 900;
   color: #be8268;
   margin-bottom: 0px;
@@ -766,49 +724,37 @@ h1 {
 
 @media (max-width: 1700px) {
   .main-heading {
-    font-size: 200px;
+    font-size: 59px;
   }
 }
 
 @media (max-width: 1500px) {
   .main-heading {
-    font-size: 170px;
+    font-size: 49px;
   }
 }
 
 @media (max-width: 1300px) {
   .main-heading {
-    font-size: 150px;
+    font-size: 41px;
   }
 }
 
 @media (max-width: 1050px) {
   .main-heading {
-    font-size: 125px;
+    font-size: 34px;
   }
 }
 
 @media (max-width: 900px) {
   .main-heading {
-    font-size: 100px;
+    font-size: 28px;
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 586px) {
   .main-heading {
-    font-size: 90px;
-  }
-}
-
-@media (max-width: 470px) {
-  .main-heading {
-    font-size: 75px;
-  }
-}
-
-@media (max-width: 370px) {
-  .main-heading {
-    font-size: 65px;
+    text-align: center;
   }
 }
 
@@ -866,11 +812,9 @@ h1 {
 }
 
 .main-btn {
-  position: relative;
-  top: 50px;
   padding: 20px 28px;
   font-family: fantasy, sans-serif;
-  font-size: 65px;
+  font-size: 55px;
   box-shadow: 0 0 20px rgba(187, 187, 187, 0.1);
   text-transform: uppercase;
   border-radius: 5px;
@@ -906,21 +850,21 @@ h1 {
 @media (max-width: 1050px) {
   .main-btn {
     padding: 9px 11px;
-    font-size: 30px;
+    font-size: 27px;
   }
 }
 
 @media (max-width: 900px) {
   .main-btn {
     padding: 8px 9px;
-    font-size: 28px;
+    font-size: 25px;
   }
 }
 
 @media (max-width: 750px) {
   .main-btn {
     padding: 7px 9px;
-    font-size: 23px;
+    font-size: 20px;
   }
 }
 

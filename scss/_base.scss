@@ -31,6 +31,7 @@ body {
         }
         .about-us {
             order: 2;
+            margin-bottom: 0;
         }
         .footer {
             order: 3;
@@ -92,7 +93,7 @@ html {
 }
 ::-webkit-scrollbar-thumb {
     background-color: $color-primary;
-    border-radius: 10px;
+    border-radius: 0;
 }
 .description::-webkit-scrollbar {
     width: 7px;
@@ -103,7 +104,7 @@ html {
 }
 .description::-webkit-scrollbar-thumb {
     background-color: #262626a8;
-    border-radius: 15px;
+    border-radius: 2px;
 }
 
 h1 {
