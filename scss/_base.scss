@@ -18,97 +18,95 @@ $font-fantacy: fantasy, sans-serif;
 $font-courier-new: "courier new", monospase;
 $font-sans-serif: sans-serif;
 body {
-    background-color: #07630e;
-    background: url("../images/bg2.jpeg") bottom no-repeat fixed;
-    background-size: cover;
+  background-color: #07630e;
+  background: url("../images/bg2.jpeg") bottom no-repeat fixed;
+  background-size: cover;
 
-    @media (max-width: 850px) {
-        display: flex;
-        flex-direction: column;
+  @media (max-width: 850px) {
+    display: flex;
+    flex-direction: column;
 
-        .gallery {
-            order: 1;
-        }
-        .about-us {
-            order: 2;
-            margin-bottom: 0;
-        }
-        .footer {
-            order: 3;
-        }
-        .header {
-            order: 0;
-        }
+    .gallery {
+      order: 1;
     }
+    .about-us {
+      order: 2;
+      margin-bottom: 0;
+    }
+    .footer {
+      order: 3;
+    }
+    .header {
+      order: 0;
+    }
+  }
 }
 h,
 p {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 * {
-    #{$m}: 0px;
-    #{$p}: 0px;
-    box-sizing: border-box;
+  #{$m}: 0px;
+  #{$p}: 0px;
+  box-sizing: border-box;
 }
 
 @mixin centering($topvalue: 30%) {
-    position: absolute;
-    top: $topvalue;
-    transform: translate(-50%, -50%);
-    left: 50%;
+  position: absolute;
+  top: $topvalue;
+  transform: translate(-50%, -50%);
+  left: 50%;
 }
 
 @mixin flexlayout {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @mixin textstyles {
-    font-weight: 300;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 %fullspace {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 @mixin transition($params...) {
-    transition: $params;
+  transition: $params;
 }
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
+  width: 10px;
+  height: 10px;
 }
 ::-webkit-scrollbar-track {
-    background-color: transparent;
+  background-color: transparent;
 
-    background-color: $color-darker;
+  background-color: $color-darker;
 }
 ::-webkit-scrollbar-thumb {
-    background-color: $color-primary;
-    border-radius: 0;
+  background-color: $color-primary;
+  border-radius: 0;
 }
 .description::-webkit-scrollbar {
-    width: 7px;
-    height: 10px;
+  width: 7px;
+  height: 10px;
 }
 .description::-webkit-scrollbar-track {
-    background-color: transparent;
+  background-color: transparent;
 }
 .description::-webkit-scrollbar-thumb {
-    background-color: #262626a8;
-    border-radius: 2px;
+  background-color: #262626a8;
+  border-radius: 2px;
 }
 
 h1 {
-    font-weight: 900;
+  font-weight: 900;
 }
-
-
